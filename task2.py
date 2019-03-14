@@ -3,7 +3,7 @@
 * Name: Even and Odd Numbers
 *
 * Write a script that will populate list with as
-* many elements as user defines. For taken number
+* many elemens user defines. For taken number
 * of elements the script should take the input from
 * user for each element. You should expect that user
 * will always provide integer numbers. At the end,
@@ -15,3 +15,22 @@
 * in which your solution might not work.
 ===================================================
 """
+
+def main():
+    number = input('Enter a number:')
+    number_of_odd= 0
+    number_of_even=0
+    for i in number:
+        if i%2==0:
+            i=i+1
+            number_of_even=i
+        if int(number[i])%2!=0:
+            i=i+1
+            number_of_odd=i
+
+    print('Number of odd is '+number_of_odd)
+
+main()
+
+
+#Ne znam, nesto ne kontam.

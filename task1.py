@@ -13,3 +13,26 @@
 * Use main() function to test your solution.
 ===================================================
 """
+def sum_digits(number):
+    allowed_character = ['0','2','1','3','4','5','6','7','8','9','-']
+    for ch in str(number):
+        if ch in allowed_character:
+            pass
+        else:
+            return -1
+    if int(number) <= 0:
+        number = abs(int(number))
+    else:
+        pass
+
+    sumdigit=0
+    for digits in str(number):
+        sumdigit += int(digits)
+    return sumdigit
+
+def main():
+    number = '188234'
+    digit_sum = sum_digits(number)
+    print("Sum of digits for given numbers is: ", digit_sum)
+
+main()

@@ -15,3 +15,13 @@
 * Use main() function to test your solution.
 ===================================================
 """
+
+def area_of_circle(r):
+   P = (abs(float(r))**2)*3.14
+   return P
+def main():
+    r = input('Enter area of circle:')
+    area = area_of_circle(r)
+    print('Area of circle is :',area)
+
+main()
